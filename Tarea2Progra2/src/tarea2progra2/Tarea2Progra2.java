@@ -6,10 +6,10 @@ import java.util.ArrayList;
 abstract class Moneda{
     public Moneda(){
     }
-    public String getSerie(){
-        String s = Integer.toString(System.out.hashCode());
-        return s;
-    }
+    //public String getSerie(){
+      //  String s = Integer.toString(System.out.hashCode());
+        //return s;
+    //}
     public abstract int getValor();
 }
 class Moneda1000 extends Moneda{
@@ -201,7 +201,6 @@ class Comprador{
 public class Tarea2Progra2 {
     public static void main(String[] args) {
         Moneda moneda1 = new Moneda1000();
-        Moneda moneda2 = new Moneda100();
         Expendedor expendedor1 = new Expendedor(12,400);
         Comprador Comprador1 = new Comprador(moneda1,2,expendedor1);
         System.out.println(expendedor1.comprarBebida(Comprador1.getMoneda(),Comprador1.getQueBebida()));
@@ -214,8 +213,5 @@ public class Tarea2Progra2 {
         Comprador1.setVuelto(expendedor1.getVuelto());
         Comprador1.setVuelto(expendedor1.getVuelto());
         System.out.println(Comprador1.cuantoVuelto());
-        System.out.println(moneda1.getSerie());
-        System.out.println(moneda2.getSerie());
-        System.out.println(moneda1);
     }
 }
