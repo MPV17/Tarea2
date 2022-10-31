@@ -6,7 +6,7 @@ import java.util.ArrayList;
 abstract class Moneda{
     public Moneda(){
     }
-    //public String getSerie(){
+    public String getSerie(){
         String s = Integer.toString(System.out.hashCode());
         return s;
     }
