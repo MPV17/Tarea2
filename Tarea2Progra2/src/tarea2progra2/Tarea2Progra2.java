@@ -7,9 +7,9 @@ abstract class Moneda{
     public Moneda(){
     }
     //public String getSerie(){
-      //  String s = Integer.toString(System.out.hashCode());
-        //return s;
-    //}
+        String s = Integer.toString(System.out.hashCode());
+        return s;
+    }
     public abstract int getValor();
 }
 class Moneda1000 extends Moneda{
